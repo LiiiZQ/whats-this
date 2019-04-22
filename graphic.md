@@ -27,3 +27,5 @@
  drawImage(Image img, int xTopLeft, int yTopLeft, int width, int height, ImageObserver o);  // resize image on screen
 
 ~~~
+
+![](https://raw.githubusercontent.com/jonkykong/SideMenu/master/etc/Screenshot1.png)
