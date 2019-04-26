@@ -1,0 +1,54 @@
+html,body{width:100%;height:100%;margin:0;padding:0;}
+html, body, * {font: 14px/1.5 arial,"Microsoft Yahei","Hiragino Sans GB",sans-serif;color:#4d555d;}
+
+/*
+ * frame
+*/
+.f-header{
+    width: 100%;
+    height: 80px;
+    background-color:#E6E6E6;
+}
+.f-header-box{
+    width: 1200px;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 128px;
+    height: 100%;
+    background: url('../i/logo.png') no-repeat no-repeat 50% 50%;
+    background-size: auto 63px;
+    float: left;
+}
+
+.header-nav{
+    width: auto;
+    height: 34px;
+    margin-top: 30px;
+    float: left;
+}
+.header-nav-item{
+    float: left;
+    width: 67px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color:#000;
+}
+.header-nav-item:hover{
+    border-radius: 3px;
+    color: #0089D2;
+    cursor: pointer;
+}
+.header-nav-item.cur{
+    background-color: rgb(51,147,100);
+    border-radius: 3px;
+    color: rgb(255,255,255);
+}
+

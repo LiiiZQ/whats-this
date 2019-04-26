@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <servlet>
+    <servlet-name>ModifyInfo</servlet-name>
+    <servlet-class>controller.ModifyInfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModifyInfo</servlet-name>
+    <url-pattern>/ModifyInfo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ModifyPsw</servlet-name>
+    <servlet-class>controller.ModifyPsw</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModifyPsw</servlet-name>
+    <url-pattern>/ModifyPsw</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>joinServlet</servlet-name>
+    <servlet-class>controller.joinServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>joinServlet</servlet-name>
+    <url-pattern>/joinServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>logServlet</servlet-name>
+    <servlet-class>controller.logServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>logServlet</servlet-name>
+    <url-pattern>/logServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CreateComment</servlet-name>
+    <servlet-class>controller.CreateComment</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateComment</servlet-name>
+    <url-pattern>/CreateComment</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CreateQuestion</servlet-name>
+    <servlet-class>controller.CreateQuestion</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateQuestion</servlet-name>
+    <url-pattern>/CreateQuestion</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>test</servlet-name>
+    <servlet-class>controller.test</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>test</servlet-name>
+    <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>next</servlet-name>
+    <servlet-class>controller.next</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>next</servlet-name>
+    <url-pattern>/next</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CheckServlet</servlet-name>
+    <servlet-class>controller.CheckServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckServlet</servlet-name>
+    <url-pattern>/CheckServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>View</servlet-name>
+    <servlet-class>controller.View</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>View</servlet-name>
+    <url-pattern>/View</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>searchServlet</servlet-name>
+    <servlet-class>controller.searchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>searchServlet</servlet-name>
+    <url-pattern>/searchServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Down</servlet-name>
+    <servlet-class>controller.Down</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Down</servlet-name>
+    <url-pattern>/Down</url-pattern>
+  </servlet-mapping>
+  
+  
+
+  
+
+</web-app>
