@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC   
+    "-//mybatis.org//DTD Mapper 3.0//EN"  
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+ <mapper namespace="com.yue.dao.IUser">
+    <select id="findAllUser" resultType="User">
+        select * from user_my order by id
+    </select>
+    
+    <delete id="deleteUser" parameterType="int">
+        delete from user_my where id=#{id}
+    </delete>
+
+    <select id="selectUser" parameterType="User" resultType="User">
+        select * from user_my where username like '%'||#{username}||'%'  order by id
+    </select>
+    <select id="mergeUser" parameterType="User">
+       MERGE INTO user_my u 
+         USING (select #{id} id,#{email} email,#{username} username,#{password} password,
+                       #{phone} phone,#{mobile} mobile,#{address} address from dual ) nu 
+          ON (u.id = nu.id)   
+         WHEN MATCHED THEN  
+           update  set
+                  u.username = nu.username,   
+	              u.password = nu.password,
+	              u.email = nu.email,
+	              u.phone = nu.phone,
+	              u.mobile = nu.mobile,
+	              u.address = nu.address where u.id=nu.id    
+        WHEN NOT MATCHED THEN  
+     insert (id,username,password,email,phone,mobile,address) 
+            values (nu.id, nu.username, nu.password,nu.email,nu.phone,nu.mobile,nu.address) 
+    </select>
+    
+    <insert id="insertUser" parameterType="User">
+        insert into user_my(id,email,username,password,phone,mobile,address) 
+               values(#{id},#{email},#{username},#{password},#{phone},#{mobile},#{address})
+    </insert>   
+    <update id="updateUser" parameterType="User">
+        update user_my set username=#{username} where id=#{id}
+    </update>
+ </mapper>
