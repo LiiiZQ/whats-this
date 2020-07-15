@@ -31,7 +31,7 @@
 [我的博客](https://my.oschina.net/epoch/home)
 链接的文字放在[]中，链接地址放在随后的（）中。
 
-##代码
+## 代码
 ```java
 class Test {
   public static void main(String[] args) {
