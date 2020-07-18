@@ -1,3 +1,6 @@
+[知乎](https://www.zhihu.com/question/21669554)
+慢慢啃吧
+
 [把Github项目变成前端网站](https://zhuanlan.zhihu.com/p/87873177) 
 + 目前完全看不懂是什么，只能以后再研究了
 + 和GitHub Pages有关
